@@ -1,0 +1,23 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Font substitution for Figma imports */
+.font-\[\'Sabaling\:Regular\'\,sans-serif\],
+[class*="font-['Sabaling"] {
+  font-family: 'Sabaling', sans-serif !important;
+}
+
+/* Fix bullet points */
+ul.list-disc {
+  list-style-type: disc !important;
+}
+
+ul.list-disc li {
+  display: list-item !important;
+  list-style-position: outside !important;
+}
+
+ul.list-disc li::marker {
+  color: currentColor;
+}
